@@ -1,15 +1,32 @@
-Search Service : search-query-csv
-Resource Group : Search_CSV_Data
-Subscription ID : d38e24a7-ccb9-417c-a27f-12e051bef228
-Primary Admin Key : A0mVxeR8ByuIn6H3PJMnbYnPogBygME9TblYaSI8a5AzSeDoEyzp
-Secondary Admin Key : MtXUnOI633MYegVDgooFycmE5zvS07j8nyapVBd5EsAzSeBe1I1M
-Query Key : vfI2WWbH18k9HcStPWWlo5l2ysHtwG5x5lvXRXIm6VAzSeDkF1zn
+### Azure AI Search
 
-Storage Account/Name : ibmdata00
-Storage Container : ibmcsvdata
+Azure AI Search is an Azure resource used for adding a full text search experience.
 
-filename : test.csv
-Index name : azureblob-index
-Document_Key : AzureSearch_DocumentKey (unique) 
+**Search Service** : search-query-csv
 
-Department, Age, Gender, JobRole
+**Resource Group** : Search_CSV_Data
+
+**Index name** : azureblob-index
+
+**Document_Key** : AzureSearch_DocumentKey 
+
+**Searchable Fields** : Department, Gender, JobRole
+
+<br>
+<br>
+
+### Project Setup
+```python
+pip install -r requirements.txt
+```
+
+### Run Project
+```python
+python main.py
+```
+
+When you run the above command, it will task you to enter a text to be searched. The results will be provided on the basis of text you enter.
+
+<br>
+
+**_NOTE_** : _Here **IBM-Dataset.csv** file is used as reference for seraching the data._
